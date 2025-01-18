@@ -1,6 +1,6 @@
 
 interface ID {
-  id: number
+  id: string
 }
 
 export default function Square({id}: ID) {
