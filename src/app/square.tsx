@@ -3,7 +3,7 @@ import "./square.scss";
 
 interface ISquare {
   value: string;
-  onSquareClick: () => void;
+  onSquareClick: VoidFunction
 }
 
 export default function Square({ value, onSquareClick }: ISquare) {
