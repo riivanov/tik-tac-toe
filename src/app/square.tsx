@@ -1,8 +1,17 @@
+'use client';
 
 interface ID {
-  id: string
+  id: string;
 }
 
-export default function Square({id}: ID) {
-  return <button className="square">{id}</button>;
+export default function Square({ id }: ID) {
+  function onClick() {
+    console.log("Clicked");
+  }
+
+  return (
+    <button onClick={onClick} className="square">
+      {id}
+    </button>
+  );
 }
