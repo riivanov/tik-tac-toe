@@ -1,17 +1,15 @@
-'use client';
+"use client";
+import "./square.scss";
 
-interface ID {
-  id: string;
+interface ISquare {
+  value: string;
+  onSquareClick: () => void;
 }
 
-export default function Square({ id }: ID) {
-  function onClick() {
-    console.log("Clicked");
-  }
-
+export default function Square({ value, onSquareClick }: ISquare) {
   return (
-    <button onClick={onClick} className="square">
-      {id}
+    <button className="square" onClick={onSquareClick}>
+      {value}
     </button>
   );
 }
